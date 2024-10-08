@@ -14,11 +14,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.0.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8"
+  },
   "description": "",
   "dependencies": {
     "@jridgewell/gen-mapping": "^0.3.5",
     "bcryptjs": "^2.4.3",
-    "concurrently": "^9.0.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -41,4 +47,5 @@
     "react-router-dom": "^6.26.2",
     "safe-buffer": "^5.2.1"
   }
+
 }
