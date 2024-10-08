@@ -11,7 +11,7 @@ const Init_register = () => {
   return (
     <div className="bg-[url('/fondologin.svg')] bg-cover bg-center h-screen flex justify-center items-center ">
         <div className="flex flex-col w-[70%] gap-y-8">
-            <p className="text-2xl">Regístrate ahora y obtén las mejores promociones en <span className="font-semibold">artesanías peruanas</span></p>
+            {/* <p className="text-2xl">Regístrate ahora y obtén las mejores promociones en <span className="font-semibold">artesanías peruanas</span></p> */}
             <div className='flex flex-col gap-y-4'>
                 <a href='http://localhost:3000/users/auth/github'><Svgregistro svgUrl="/services/github.svg" text="Github"/></a>
                 <a href='http://localhost:3000/users/auth/discord'><Svgregistro svgUrl="/services/discord.svg" text="Discord"/></a>
@@ -20,7 +20,7 @@ const Init_register = () => {
                 <Svgregistro svgUrl="/services/phone.svg" text="celular"/>
             </div>
             <div className='flex flex-col justify-center items-center'>
-                <p className='text-2xl'>¿Ya tienes una cuenta?</p>
+                {/* <p className='text-2xl'>¿Ya tienes una cuenta?</p> */}
                 <p className='text-2xl underline font-semibold' onClick={eventoCambiarVista}>Inicia sesión</p>
             </div>
         </div>

@@ -8,12 +8,12 @@ const Start = () => {
   useEffect(() => {
     const fadeTimer = setTimeout(() => {
       setIsFading(true);
-    }, 1500); 
+    }, 1); 
 
 
     const navigateTimer = setTimeout(() => {
       navigate('/init-register'); 
-    }, 2000); 
+    }, 2); 
 
     return () => {
       clearTimeout(fadeTimer);

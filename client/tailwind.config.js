@@ -1,24 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: [
-      "./index.html",
-      "./src/**/*.{js,jsx,ts,tsx}",
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
-    theme: {
-      extend: {
-        fontFamily: {
-          bellota: ['Bellota', 'cursive'],
-        },
-        colors : {
-          graySearch: "#3D3D3D",
-          grayUbi: "#D9D9D9",
-        },
-        fontSize: {
-          'xxs': '0.625rem',
-        },
+  theme: {
+    extend: {
+      fontFamily: {
+        'noto-sans-jp': ['Noto Sans JP', 'sans-serif'], // Add your font here
+      },
+      fontSize: {
+        'xxs': '0.625rem',
       },
     },
-    plugins: [],
-  }
-  
-  
+  },
+  plugins: [],
+};
