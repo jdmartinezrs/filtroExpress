@@ -5,6 +5,7 @@ import Init_register from "./pages/Init_register"
 import Init_login from "./pages/Init_login"
 import Register from './pages/Register'
 import Login from './pages/Login';
+import Home from "./pages/Home"
 import Start from "./pages/Start"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path='/init-login' element={<Init_login />} />
       <Route path='/register' element={<Register />} />
       <Route path="/login" element={<Login />} />
+      <Route path='/home' element={<ProtectedRoute><Home /></ProtectedRoute>} />
       </Routes>
     </Router>
   )
