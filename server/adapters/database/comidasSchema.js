@@ -1,38 +1,49 @@
 const mongoose = require('mongoose');
 
-const ComidasSchema = mongoose.Schema({
+const ComidasSchema = new mongoose.Schema({
+  nombre: {
+    type: String,
+    required: true,
+  },
+  categoria: {
+    type: String,
+    enum: ['vegetables', 'protein', 'nuts&seeds', 'shakes'],
+    required: true,
+  },
+  ocasion: {
+    type: String,
+    enum: ['breakfast', 'lunch', 'dinner'],
+    required: true,
+  },
+  calorias: {
+    type: Number,
+    required: true,
+  },
+  descripcion: {
+    type: String,
+    required: true,
+  },
+  ingredientes: {
+    type: [String],
+    required: true,
+  },
+  valoraciones: {
+    type: [Number],
+    default: [],
+  },
+  promedioValoracion: {
+    type: Number,
+    default: 0,
+  },
+  Delivery: {
+    type: Number,
+    required: true,
+  },
+  foto: {
+    type: String,
+    required: true,
+  },
+});
 
-    nombre:{
-        type:String,
-        required:true
-    },
-    tipo:{
-        type:String,
-        required:true
-    },
-    ingredientes: {
-        type: [String],
-        required: true,
-        validate: {
-          validator: function(v) {
-            return v.length > 0; 
-          },
-          message: props => `${props.value} debe contener al menos un ingrediente.`
-        }
-      },
-      precio:{
-        type: Number,
-        required: true,
-        min:0
-      },
-      imagen:{
-        type: String,
-        required: true
-      },
-      categoria:{
-        type:String,
-        required: true
-      },
-},{timestamps: true});
-
-module.exports = mongoose.model('Comida', ComidasSchema, 'comidas');
+ 
+module.exports = mongoose.model('comidas', ComidasSchema, 'comidas');
