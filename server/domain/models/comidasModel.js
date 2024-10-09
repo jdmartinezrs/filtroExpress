@@ -12,6 +12,10 @@ class Food{
         return await Comidas.findById(id).exec();
     }
 
+    async foodSearchBarModel(query) {
+        return await Comidas.aggregate(query).exec();
+    }
+
 }
 
 module.exports = Food

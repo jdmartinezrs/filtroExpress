@@ -6,9 +6,12 @@ const router = express.Router();
 const  foodController = new FoodController();
 const foodValidator = new FoodValidator();
 
+
+
 router.post("/searchFoodCategory",foodValidator.getFoodCategoryServiceValidator(),(req,res)=>
 foodController.getFoodCategoryService(req, res));
-
+router.get('/foodSearchBar',foodValidator.foodSearchBarValidator(), (req, res) => 
+foodController.foodSearchBarController(req, res))
 router.get("/:id",foodValidator.getDishByIdValidator(),(req,res)=>foodController.getDishByIdController(req, res));
 
 

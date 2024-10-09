@@ -21,6 +21,14 @@ class FoodService{
         return food;
     }
 
+    async foodSearchBarService(searchTerm) {
+        const food = await this.FoodService.foodSearchBarRepository(searchTerm);
+        if (!food ||food.length === 0) {
+            throw new Error(JSON.stringify({ status: 404, message: 'No dishes were found' }));
+        }
+        return food;
+    }
+
 }
 
 module.exports = FoodService;

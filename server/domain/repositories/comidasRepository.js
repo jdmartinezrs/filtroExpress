@@ -45,6 +45,26 @@ class FoodRepository{
                     }
                 }
 
+                async foodSearchBarRepository(searchTerm) {
+                    try {
+                        const query = [
+                            {
+                                $match: {
+                                    nombre: { $regex: searchTerm, $options: 'i' } 
+                                }
+                            }
+                        ];
+                        const food = new Food();
+                        const result = await food.foodSearchBarModel(query);
+                        
+                        console.log("Query Result:", result); 
+                        
+                        return result;
+                    } catch (error) {
+                        throw new Error(JSON.stringify({ status: 400, message: 'Error searching bar workshops' }));
+                    }
+                }
+
             }
             
             module.exports = FoodRepository;

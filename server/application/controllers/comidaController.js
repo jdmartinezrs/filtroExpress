@@ -36,6 +36,21 @@ async getDishByIdController(req, res){
     }
 }
 
+async foodSearchBarController(req, res) {
+    try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
+        
+        const searchTerm = req.query.searchTerm; 
+        const food = await this.foodService.foodSearchBarService(searchTerm);
+        
+        res.status(200).json(food);
+    } catch (error) {
+        const errorObj = JSON.parse(error.message);
+        res.status(errorObj.status).json({ message: errorObj.message });
+    }
+}
+
 
 
 }

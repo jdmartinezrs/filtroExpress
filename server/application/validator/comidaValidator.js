@@ -37,6 +37,16 @@ class FoodValidator {
 
         ]
     }
+    
+    foodSearchBarValidator = () => {
+        return [
+          query('searchTerm')
+              .exists().withMessage('Search term is required.')
+              .isString().withMessage('Search term must be a string.')
+              .isLength({ min: 2, max: 50 }).withMessage('Search term must be between 2 and 50 characters.')  
+      ];
+    
+      };
 }
 
 module.exports= FoodValidator;
