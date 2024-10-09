@@ -27,17 +27,17 @@ const Home = () => {
         <div className='relative'>
            
             <section className='m-4 mb-0 flex flex-col gap-y-1 relative'>
-                <div className='bg-grayUbi flex justify-between px-2 py-1 gap-x-3 rounded items-center'>
+                <div className='bg-grayUbi flex justify-between px-2 py-1 gap-x-3 rounded items-center  bg-red-700'>
                     <img src="/searchbar/ubi.svg" alt="" className='w-4' />
                     <input
                         type="text"
                         className="text-black text-opacity-40 text-xs bg-transparent placeholder:text-opacity-40 w-full"
-                        placeholder="Ubicación de entrega actual"
+                        placeholder="Search by name..."
                     />
                 </div>
                 <img src="/home/rectangle.svg" alt="svg" className='absolute top-10 -left-4 z-[-1] w-5' />
                 <div className='mx-3 flex flex-col items-center justify-center gap-y-1'>
-                    <p className='font-black self-start'>Categorías</p>
+                    {/* <p className='font-black self-start'>Categorías</p> */}
                     <div className='my-2 flex items-start gap-x-5 gap-y-2 flex-wrap'>
                         {categories.map((category) => (
                             <Categoria
@@ -54,11 +54,9 @@ const Home = () => {
                         <p>Talleres del mes</p>
                         <img src="/home/rombos.svg" alt="svg" className='w-20' />
                     </div>
-                    {/* <p className='text-sm text-opacity-50 text-black'>¡Aprende como hacerlos en estos talleres educativos!</p> */}
                     <a href='/workshops'><img src="/home/image.svg" alt="" className='w-52 mt-4' /></a>
                 </div>
-            </section>
-           
+            </section>    
         </div>
     );
 };

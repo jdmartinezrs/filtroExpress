@@ -6,6 +6,7 @@ import Init_login from "./pages/Init_login"
 import Register from './pages/Register'
 import Login from './pages/Login';
 import Home from "./pages/Home"
+import Product from './pages/Product'
 import Start from "./pages/Start"
 import Categories from './pages/Categories'
 
@@ -17,7 +18,8 @@ function App() {
       <Route path='/' element={<Start />} />
       <Route path='/init-register' element={<Init_register />} />
       <Route path='/init-login' element={<Init_login />} />
-      <Route path='/register' element={<Register />} />
+      <Route path='/register' element={<Register/>} />
+      <Route path='/Product' element={<ProtectedRoute><Product /></ProtectedRoute>} />
       <Route path="/login" element={<Login />} />
       <Route path='/categories' element={<ProtectedRoute><Categories /></ProtectedRoute>} />
       <Route path='/home' element={<ProtectedRoute><Home /></ProtectedRoute>} />

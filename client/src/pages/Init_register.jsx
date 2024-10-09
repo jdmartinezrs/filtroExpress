@@ -16,12 +16,12 @@ const Init_register = () => {
                 <a href='http://localhost:3000/users/auth/github'><Svgregistro svgUrl="/services/github.svg" text="Github"/></a>
                 <a href='http://localhost:3000/users/auth/discord'><Svgregistro svgUrl="/services/discord.svg" text="Discord"/></a>
                 <a href='http://localhost:3000/users/auth/google'><Svgregistro svgUrl="/services/gmail.svg" text="Gmail"/></a>
-                <a href='/register'><Svgregistro svgUrl="/services/email.svg" text="correo"/></a>
-                <Svgregistro svgUrl="/services/phone.svg" text="celular"/>
+                {/* <a href='/register'><Svgregistro svgUrl="/services/email.svg" text="correo"/></a> */}
+           
             </div>
             <div className='flex flex-col justify-center items-center'>
                 {/* <p className='text-2xl'>¿Ya tienes una cuenta?</p> */}
-                <p className='text-2xl underline font-semibold' onClick={eventoCambiarVista}>Inicia sesión</p>
+                {/* <p className='text-2xl underline font-semibold' onClick={eventoCambiarVista}>Inicia sesión</p> */}
             </div>
         </div>
     </div>

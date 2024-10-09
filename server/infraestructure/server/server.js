@@ -6,7 +6,9 @@ const googleStrategy = require('../../application/middlewares/authenticateGoogle
 const gitHubStrategy = require('../../application/middlewares/authenticateGit'); // Estrategia de autenticación de GitHub
 const discordStrategy = require('../../application/middlewares/authenticateDiscord'); // Estrategia de autenticación de Discord
 const userRoutes = require('../../application/routes/userRoute'); // Rutas de usuarios
-const { jsonParseErrorHandler } = require('../middlewares/errorHandling'); // Middleware para manejar errores de JSON
+const comidaRoute = require('../../application/routes/comidaRoute');
+const { jsonParseErrorHandler } = require('../middlewares/errorHandling'); 
+const productRoutes = require('../../application/routes/productRoute'); 
 const { limiTotal } = require('../middlewares/rateLimit'); // Middleware de limitación de tasa
 const cookieParser = require('cookie-parser'); // Middleware para manejar cookies
 
@@ -50,8 +52,9 @@ const createServer = () => {
     app.use(discordStrategy.session());
 
     // 🟡 Define las rutas de la aplicación.
+    app.use('/products', productRoutes);
     app.use('/users', userRoutes); // Rutas para usuarios.
-
+    app.use('/comidas', comidaRoute); // Rutas para comidas.
     return server; // Devuelve el servidor creado.
 };
 

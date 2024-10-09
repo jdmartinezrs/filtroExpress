@@ -89,7 +89,9 @@ const Categories = () => {
                 <div className="flex flex-wrap justify-between">
                     {products.length > 0 ? (
                         products.map((product, index) => (
-                            <div key={index} className="w-[45%] rounded-lg overflow-hidden mt-4" onClick={() => navigate('/product', { state: { product } })}>
+                            <div key={index} className="w-[45%] rounded-lg overflow-hidden mt-4" onClick={() => navigate('/product', { 
+                                state: { product: product } 
+                            })}>
                                 <div className="w-[100%]">
                                     <img src={product.foto} alt={product.nombre} className="w-[100%] min-h-[130px] max-h-[130px]"/>
                                 </div>
