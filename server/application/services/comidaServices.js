@@ -13,6 +13,13 @@ class FoodService{
         return food;
     }
 
+    async getDishByIdService(id){
+        const food = await this.FoodService.getDishByIdRepository(id);
+        if(!food){
+            throw new Error(JSON.stringify({ status: 404, message: 'Dish wasnt found' }));
+        }
+        return food;
+    }
 
 }
 

@@ -9,4 +9,9 @@ const foodValidator = new FoodValidator();
 router.post("/searchFoodCategory",foodValidator.getFoodCategoryServiceValidator(),(req,res)=>
 foodController.getFoodCategoryService(req, res));
 
+router.get("/:id",foodValidator.getDishByIdValidator(),(req,res)=>foodController.getDishByIdController(req, res));
+
+
+
+
 module.exports =router;

@@ -13,7 +13,7 @@ class FoodRepository{
                                 $match: { categoria: { $regex: new RegExp(categoria, 'i') } } 
                             },
                             {
-                                $project: { // Corrige la sintaxis de $project
+                                $project: { 
                                     _id: 1,
                                     nombre: 1,
                                     categoria: 1,
@@ -35,6 +35,16 @@ class FoodRepository{
                         throw new Error(JSON.stringify({ status: 400, message: 'Error retrieving food by category' }));
                     }
                 }
+
+                async getDishByIdRepository(id){
+                    try{
+                        const food = new Food();
+                        return await food.getDishByIdModel(id);
+                    }catch (error){
+                        throw new Error(JSON.stringify({ status: 400, message: 'Error retrieving dishes' }));
+                    }
+                }
+
             }
             
             module.exports = FoodRepository;
