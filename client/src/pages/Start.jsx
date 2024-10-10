@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const Start = () => {
   const navigate = useNavigate(); 
   const [isFading, setIsFading] = useState(false);
@@ -8,12 +9,12 @@ const Start = () => {
   useEffect(() => {
     const fadeTimer = setTimeout(() => {
       setIsFading(true);
-    }, 1); 
+    }, 4); 
 
 
     const navigateTimer = setTimeout(() => {
       navigate('/init-register'); 
-    }, 2); 
+    }, 5); 
 
     return () => {
       clearTimeout(fadeTimer);
@@ -22,11 +23,18 @@ const Start = () => {
   }, [navigate]);
 
   return (
-    <div className={`bg-[url('/fondo.svg')] bg-cover bg-center h-screen flex justify-center items-center transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
-      <div className="w-[70%]">
-        <img src="/mainlogo.svg" alt="Main Logo" />
-      </div>
-    </div>
+    <div className='w-[100vw] "bg-gradient-to-l md:bg-gradient-to-r"'>
+<div
+  className={`bg-cover bg-center h-screen flex justify-center items-center transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}
+>
+  <img src='/public/images/background.png' alt='Background' className='h-[40px]' />
+
+  <div className="w-[70%]">
+    
+  </div>
+</div>
+</div>
+  
   );
 };
 
