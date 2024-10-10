@@ -8,9 +8,9 @@ const Home = () => {
 
     const categories = [
         { svgUrl: "/images/plato.png", text: "Vegetables", className : "w-[70%]" },
-        { svgUrl: "/categorias/ceramica.svg", text: "Nuts & Sets", className : "w-[60%]" },
-        { svgUrl: "/categorias/orfebreria.svg", text: "Protein", className : "w-[70%]" },
-        { svgUrl: "/categorias/tallaenpiedra.svg", text: "Shakes", className : "w-[70%]" },
+        { svgUrl: "/images/vista.png", text: "Nuts & Sets", className : "w-[60%]" },
+        { svgUrl: "/images/Group 7.png", text: "Protein", className : "w-[70%]" },
+        { svgUrl: "/images/Group 8.png", text: "Shakes", className : "w-[70%]" },
     ];
 
     const handleCategoryClick = (category) => {
@@ -26,7 +26,7 @@ const Home = () => {
                     <h1 className='text-xl'>Hello Sara</h1>
                 </div>
             
-                <div className="bg-grayUbi flex justify-between px-2 py-1 gap-x-3 rounded items-center h-10 w-65 m-7 bg-red-700">
+                <div className="bg-grayUbi flex justify-between px-2 py-1 gap-x-3 rounded items-center h-10 w-65 m-7 bg-gray-800">
                     <input
                         type="text"
                         className="text-black text-opacity-40 text-xs bg-transparent placeholder:text-opacity-40 w-full"
@@ -46,7 +46,7 @@ const Home = () => {
                             />
                         ))}
                     </div>
-                    <h1>Talleres del mes</h1>
+                   
                     <div className='flex gap-x-5 underline text-lg'>
                         
 

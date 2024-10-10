@@ -27,7 +27,7 @@ const Start = () => {
 <div
   className={`bg-cover bg-center h-screen flex justify-center items-center transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}
 >
-  <img src='/public/images/background.png' alt='Background' className='h-[40px]' />
+  <img src='/public/images/background.png' alt='Background' className='h-60' />
 
   <div className="w-[70%]">
     
