@@ -65,6 +65,17 @@ class FoodRepository{
                     }
                 }
 
+                async getAllFoodRepository() {
+                    try {
+                        const food = new Food(); // 🟡 Crea una nueva instancia del modelo Product.
+                        return await food.getAllFood(); // 🟡 Llama al método para obtener todos los productos.
+                    } catch (error) {
+                       
+                        throw new Error(JSON.stringify({ status: 400, message: 'Error retrieving food' }));
+                    }
+                }
+                
+
             }
             
             module.exports = FoodRepository;

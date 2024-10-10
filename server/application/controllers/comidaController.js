@@ -52,6 +52,21 @@ async foodSearchBarController(req, res) {
 }
 
 
+async getAllFoodController(req, res) {
+    try {
+        const errors = validationResult(req);
+        // Si hay errores de validación, devolver un error 400
+        if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
+        // Obtener todos los productos utilizando el servicio
+        const food = await this.foodService.getAllFoodService();
+        // Devolver todos los productos encontrados
+        res.status(200).json(food);
+    } catch (error) {
+        // Manejo de errores: devolver el estado y mensaje del error
+        const errorObj = JSON.parse(error.message);
+        res.status(errorObj.status).json({ message: errorObj.message });
+    }
+}
 
 }
 

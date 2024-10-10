@@ -16,6 +16,10 @@ class Food{
         return await Comidas.aggregate(query).exec();
     }
 
+    async getAllFood() {
+        return await Comidas.find({}).exec(); 
+    }
+
 }
 
 module.exports = Food

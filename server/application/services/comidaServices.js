@@ -29,6 +29,15 @@ class FoodService{
         return food;
     }
 
+   
+
+    async getAllFoodService() {
+        const food = await this.FoodService.getAllFoodRepository(); // Fetching all products from repository
+        if (!food) {
+            throw new Error(JSON.stringify({ status: 404, message: 'Products not found' })); // Error if no products found
+        }
+        return food; 
+    }
 }
 
 module.exports = FoodService;

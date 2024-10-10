@@ -1,429 +1,664 @@
-### Espaciado
+documentación 
 
-- **Margin (m):** `m-0`, `m-1`, `m-2`, ..., `m-10`, `m-auto`
-- **Padding (p):** `p-0`, `p-1`, `p-2`, ..., `p-10`
+post http://localhost:3000/comidas/searchFoodCategory
 
-### Tamaños
-
-- **Width (w):** `w-0`, `w-1/2`, `w-full`, `w-screen`, `w-auto`
-- **Height (h):** `h-0`, `h-1/2`, `h-full`, `h-screen`, `h-auto`
-
-### Colores
-
-- **Text Color:** `text-red-500`, `text-blue-300`, `text-gray-700`
-- **Background Color:** `bg-red-500`, `bg-blue-300`, `bg-gray-700`
-- **Border Color:** `border-red-500`, `border-blue-300`
-
-### Tipografía
-
-- **Font Size:** `text-xs`, `text-sm`, `text-base`, `text-lg`, `text-xl`
-- **Font Weight:** `font-thin`, `font-light`, `font-normal`, `font-bold`
-- **Text Alignment:** `text-left`, `text-center`, `text-right`
-
-### Flexbox
-
-- **Display:** `flex`, `inline-flex`
-- **Direction:** `flex-row`, `flex-col`, `flex-row-reverse`, `flex-col-reverse`
-- **Justify Content:** `justify-start`, `justify-center`, `justify-between`, `justify-around`
-- **Align Items:** `items-start`, `items-center`, `items-end`
-
-### Grid
-
-- **Grid Template Columns:** `grid-cols-1`, `grid-cols-2`, ..., `grid-cols-12`
-- **Gap:** `gap-0`, `gap-1`, `gap-2`, ..., `gap-10`
-
-### Bordes
-
-- **Border Width:** `border`, `border-2`, `border-4`
-- **Border Radius:** `rounded`, `rounded-lg`, `rounded-full`
-- **Border Style:** `border-solid`, `border-dashed`, `border-dotted`
-
-### Sombras
-
-- **Box Shadow:** `shadow`, `shadow-md`, `shadow-lg`, `shadow-xl`, `shadow-2xl`
-
-### Posicionamiento
-
-- **Position:** `static`, `relative`, `absolute`, `fixed`, `sticky`
-- **Z-Index:** `z-0`, `z-10`, `z-20`
-
-### Efectos
-
-- **Opacity:** `opacity-0`, `opacity-25`, `opacity-50`, `opacity-100`
-- **Transform:** `transform`, `translate-x-1`, `scale-110`, `rotate-45`
-
-### Responsive
-
-- **Breakpoints:** `sm:`, `md:`, `lg:`, `xl:`, `2xl:`
-
-### Animaciones
-
-- **Transition:** `transition`, `transition-all`, `duration-300`, `ease-in`, `ease-out`
-
-### Otros
-
-- **Overflow:** `overflow-hidden`, `overflow-auto`, `overflow-scroll`
-- **Cursor:** `cursor-pointer`, `cursor-not-allowed`, `cursor-move`
-
-
-
-### Espaciado
-
-- **Margin (m):** `mx-auto` (centra horizontalmente), `my-4` (margen vertical)
-- **Padding (p):** `px-4` (padding horizontal), `py-2` (padding vertical)
-
-### Tamaños
-
-- **Max Width (max-w):** `max-w-xs`, `max-w-sm`, `max-w-md`, `max-w-lg`, `max-w-xl`, `max-w-full`
-- **Min Width (min-w):** `min-w-0`, `min-w-full`
-- **Min Height (min-h):** `min-h-screen`
-
-### Colores
-
-- **Border Color:** `border-transparent`, `border-gray-300`
-- **Text Color (opacidad):** `text-red-500/50` (color con opacidad)
-
-### Tipografía
-
-- **Font Family:** `font-sans`, `font-serif`, `font-mono`
-- **Line Height:** `leading-none`, `leading-tight`, `leading-normal`, `leading-loose`
-
-### Flexbox y Grid
-
-- **Flex Grow:** `flex-grow`, `flex-grow-0`
-- **Flex Shrink:** `flex-shrink`, `flex-shrink-0`
-- **Grid Auto Flow:** `grid-flow-row`, `grid-flow-col`
-
-### Bordes
-
-- **Rounded Corners:** `rounded-t`, `rounded-b`, `rounded-l`, `rounded-r`
-- **Ring:** `ring`, `ring-2`, `ring-red-500` (para efectos de contorno)
-
-### Sombras
-
-- **Inverted Shadow:** `shadow-inner`
-
-### Posicionamiento
-
-- **Inset:** `inset-0`, `inset-x-0`, `inset-y-0` (para posiciones absolutas)
-
-### Efectos
-
-- **Hover/Focus States:** `hover:bg-blue-500`, `focus:ring`, `focus:outline-none`
-
-### Transiciones
-
-- **Transition Properties:** `transition-colors`, `transition-opacity`, `transition-transform`
-
-### Responsive y Dark Mode
-
-- **Dark Mode:** `dark:bg-gray-800`, `dark:text-white`
-- **Responsive Utilities:** `sm:flex`, `md:hidden`, `lg:block`
-
-### Otros
-
-- **Cursor:** `cursor-default`, `cursor-help`
-- **List Styles:** `list-none`, `list-disc`, `list-decimal`
-- **Text Decoration:** `underline`, `line-through`, `no-underline`
-- **Visibility:** `visible`, `invisible`
-
-### Miscellaneous
-
-- **Object Fit:** `object-cover`, `object-contain`
-- **White Space:** `whitespace-nowrap`, `whitespace-normal`
-
-¡Claro! Aquí tienes aún más clases y propiedades esenciales de Tailwind CSS:
-
-### Espaciado Avanzado
-
-- **Gap en Flex/Grid:** `gap-1`, `gap-2`, `gap-3`, ..., `gap-10`
-- **Padding de Elementos Específicos:** `pt-4` (padding top), `pr-4` (padding right), `pb-4` (padding bottom), `pl-4` (padding left)
-
-### Tamaños Adicionales
-
-- **Width:** `w-1/3`, `w-1/4`, `w-2/3`, `w-1/5`, `w-2/5`
-- **Height:** `h-1/3`, `h-1/4`, `h-2/3`
-
-### Colores Avanzados
-
-- **Background Gradient:** `bg-gradient-to-r`, `bg-gradient-to-l`, `bg-gradient-to-t`, `bg-gradient-to-b`
-- **Sombra de Texto:** `text-shadow`, `text-shadow-lg`
-
-### Tipografía Avanzada
-
-- **Text Transform:** `uppercase`, `lowercase`, `capitalize`
-- **Text Overflow:** `truncate`, `overflow-ellipsis`
-
-### Flexbox Avanzado
-
-- **Align Self:** `self-auto`, `self-start`, `self-center`, `self-end`, `self-stretch`
-- **Flex Basis:** `basis-1/4`, `basis-1/2`, `basis-full`
-
-### Grid Avanzado
-
-- **Grid Template Rows:** `grid-rows-1`, `grid-rows-2`, `grid-rows-3`
-- **Auto Rows y Columns:** `auto-cols-fr`, `auto-rows-fr`
-
-### Bordes Avanzados
-
-- **Bordes Específicos:** `border-t`, `border-b`, `border-l`, `border-r`
-- **Doble Bordes:** `border-dotted`, `border-dashed`
-
-### Sombras Avanzadas
-
-- **Shadow Color:** `shadow-red-500`, `shadow-blue-300`
-
-### Animaciones
-
-- **Animation Utilities:** `animate-spin`, `animate-ping`, `animate-bounce`, `animate-pulse`
-
-### Estado de Hover y Focus
-
-- **Focus Ring Color:** `focus:ring-2`, `focus:ring-offset-2`
-- **Hover Effects:** `hover:shadow-lg`, `hover:text-red-700`
-
-### Responsive y Dark Mode Avanzado
-
-- **Responsive Font Size:** `text-sm`, `md:text-lg`, `lg:text-xl`
-- **Dark Mode Variants:** `dark:hover:bg-gray-600`, `dark:focus:ring-blue-500`
-
-### Otros
-
-- **List Style Type:** `list-inside`, `list-outside`
-- **Visibility y Display:** `hidden`, `block`, `inline`, `inline-block`, `table`, `table-row`, `table-cell`
-
-### Media Queries
-
-- **Media Queries Personalizadas:** `@media (prefers-color-scheme: dark) { ... }` para ajustar estilos en función de la preferencia del sistema.
-
-### Miscellaneous Avanzado
-
-- **Break Word:** `break-words`
-- **Isolation:** `isolation-auto`, `isolation-isolate`
-
-
-
-### Cookies
-
-header/carrito/chat/favorites/compras
-
-   const getCookieValue = (cookieName) => {
-        const cookies = document.cookie.split('; ');
-        const cookie = cookies.find(row => row.startsWith(cookieName + '='));
-        return cookie ? cookie.split('=')[1] : null;
-    };
-
- 
-
-product/
-
- const token = getCookieValue('token');
-    if (token) {
-        try {
-            const decodedToken = jwtDecode(token);
-            const userEmail = decodedToken.correo;
-            fetchUserData(userEmail);
-        } catch (error) {
-            console.error('Token inválido', error);
-        }
-    }
-}, [product]);
-
-
- ingredientes: {
-    type: [String],
-    required: true,
-    validate: {
-      validator: function(v) {
-        return v.length > 0; // Asegura que la lista de ingredientes no esté vacía
-      },
-      message: props => `${props.value} debe contener al menos un ingrediente.`
-    }
-  }
-
-
-tallerModel
-
-```js
-   async aggregate(query) {
-        return await Producto.aggregate(query).exec(); // 🟡 Realiza una agregación sobre los productos y devuelve el resultado.
-    }
-```
-
-tallerRepository
-
-```js
-   async searchBarWorkshopsRepository(searchTerm) {
-        try {
-            const query = [
-                {
-                    $match: {
-                        nombre: { $regex: searchTerm, $options: 'i' } 
-                    }
-                }
-            ];
-    
-            const workshop = new Workshop();
-            const result = await workshop.searchBarWorkshopsModel(query);
-            
-            console.log("Query Result:", result); // Check the result here
-            
-            return result;
-        } catch (error) {
-            throw new Error(JSON.stringify({ status: 400, message: 'Error searching bar workshops' }));
-        }
-    }
-```
-
-tallerServices
-
-```js
-    async searchBarWorkshopsService(searchTerm) {
-        const workshop = await this.workshopService.searchBarWorkshopsRepository(searchTerm);
-        if (!workshop ||workshop.length === 0) {
-            throw new Error(JSON.stringify({ status: 404, message: 'No workshops were found' }));
-        }
-        return workshop;
-    }
-```
-
-tallerController
-
-```js
-    async searchBarWorkshopsController(req, res) {
-        try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
-            
-            const searchTerm = req.query.searchTerm; 
-            const users = await this.workshopService.searchBarWorkshopsService(searchTerm);
-            
-            res.status(200).json(users);
-        } catch (error) {
-            const errorObj = JSON.parse(error.message);
-            res.status(errorObj.status).json({ message: errorObj.message });
-        }
-    }
-```
-
-tallerValidator
-
-```js
-  searchBarWorkshopsValidator = () => {
-    return [
-      query('searchTerm')
-          .exists().withMessage('Search term is required.')
-          .isString().withMessage('Search term must be a string.')
-          .isLength({ min: 2, max: 50 }).withMessage('Search term must be between 2 and 50 characters.')  
-  ];
-
-  };
-```
-
-tallerRoute
-
-```js
-router.get('/workshopBar', workshopValidator.searchBarWorkshopsValidator(), (req, res) => 
-    workshopController.searchBarWorkshopsController(req, res) // Fetching workshops with artesano names
-```
-
-endpoint
-
-```js
-http://localhost:3000/workshops/workshopBar?searchTerm=soñ
-```
-
-
-
-##### view
-
-import React, { useState, useEffect } from "react";
-import leftSVG from '../../public/left-arrow.svg';
-import { useNavigate } from "react-router-dom";
-
-const Workshops = () => {
-    const [workshops, setWorkshops] = useState([]);
-    const [searchTerm, setSearchTerm] = useState(""); // New state for search term
-    const navigate = useNavigate(); 
-
-    useEffect(() => {
-        fetch('http://localhost:3000/workshops/getWorkshopWithArtesanoName')
-            .then(response => response.json())
-            .then(data => setWorkshops(data))
-            .catch(error => console.error('Error fetching workshops:', error));
-    }, []);
-
-    const handleWorkshopClick = (workshop) => {
-        navigate('/Register_workshop', { state: { workshop } });
-    };
-
-    // Function to handle search input changes
-    const handleSearchChange = (e) => {
-        setSearchTerm(e.target.value);
-    };
-
-    // Filter workshops based on the search term
-    const filteredWorkshops = workshops.filter(workshop => 
-        workshop.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        workshop.artesanoNombre.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    return (
-        <div className="flex flex-col gap-y-6">
-            <section className="flex flex-col gap-y-2">
-                <div className="flex relative items-center justify-center w-full py-5">
-                    <div className="left absolute top-0 left-0">
-                        <a href="/home" className="flex items-center">
-                            <img src={leftSVG} alt="Left Arrow" className="w-10 h-19" />
-                        </a>
-                    </div>
-                    <p className="font-bold w-20 text-center">Talleres Educativos</p>
-                    <img src="/category/rectangle.svg" alt="" className="w-14 absolute z-[-1]" />
-                </div>
-                <div className="px-8">
-                    <div className="flex bg-grayUbi w-[100%] rounded gap-3 p-2">
-                        <img src="/category/search.svg" alt="" className="w-4" />
-                        <input 
-                            type="text" 
-                            placeholder="Buscar producto o palabra clave..." 
-                            className="bg-transparent w-[100%] text-sm" 
-                            value={searchTerm} // Controlled input
-                            onChange={handleSearchChange} // Update search term on change
-                        />
-                    </div>
-                </div>
-            </section>
-            <section className="mx-4 flex flex-col gap-y-4">
-                {filteredWorkshops.length > 0 ? (
-                    filteredWorkshops.map((workshop) => (
-                        <div key={workshop._id} className="flex w-[100%] bg-grayUbi rounded-lg">
-                            <div className="w-48 border-black border rounded-lg overflow-hidden">
-                                <img src={workshop.imagen} alt={workshop.nombre} className="w-[100%] min-h-[120px] max-h-[120px]" />
-                            </div>
-                            <div className="flex flex-col w-[100%] gap-y-3 m-2">
-                                <div className="flex items-start flex-col">
-                                    <p className="text-sm font-bold leading-none">{workshop.nombre}</p>
-                                    <p className="text-sm underline leading-none">Para el público: {workshop.publico}</p>
-                                    <p className="text-sm font-bold leading-none">Artesano: {workshop.artesanoNombre}</p>
-                                </div>
-                                <div className="items-start bg-graySearch rounded px-2 py-1">
-                                    <button 
-                                        onClick={() => handleWorkshopClick(workshop)}
-                                        className="text-xs text-white underline"
-                                    >
-                                        Entérate más sobre el taller aquí
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    ))
-                ) : (
-                    <p>No hay talleres que coincidan con tu búsqueda.</p>
-                )}
-            </section>
-        </div>
-    );
+body: {
+  "categoria":"nuts&seeds"
 }
 
-export default Workshops;
+```js
+post http://localhost:3000/comidas/searchFoodCategory
+
+body: {
+  "categoria":"nuts&seeds"
+}
+
+it return's food by category's
+
+post http://localhost:3000/comidas/searchFoodCategory
+
+body: {
+  "categoria":"nuts&seeds" <= for instance {categoria}
+}
+
+
+**return's:
+
+[
+  {
+    "_id": "6706e7faf50b0b083892fbc2",
+    "nombre": "Tazon de Acai",
+    "categoria": "nuts&seeds",
+    "ocasion": "breakfast",
+    "calorias": 300,
+    "descripcion": "Rico en antioxidantes y delicioso.",
+    "ingredientes": [
+      "pure de acai",
+      "platano",
+      "granola",
+      "miel"
+    ],
+    "valoraciones": [
+      5,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 15,
+    "foto": "https://example.com/tazon_acai.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc5",
+    "nombre": "Tazon de Quinoa",
+    "categoria": "nuts&seeds",
+    "ocasion": "dinner",
+    "calorias": 400,
+    "descripcion": "Nutritivo y lleno de sabor.",
+    "ingredientes": [
+      "quinoa",
+      "aguacate",
+      "tomate",
+      "nueces"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 20,
+    "foto": "https://example.com/tazon_quinoa.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc6",
+    "nombre": "Garbanzos Asados",
+    "categoria": "nuts&seeds",
+    "ocasion": "lunch",
+    "calorias": 150,
+    "descripcion": "Crujientes y llenos de sabor.",
+    "ingredientes": [
+      "garbanzos",
+      "aceite de oliva",
+      "sal",
+      "pimienta"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.33,
+    "Delivery": 8,
+    "foto": "https://example.com/garbanzos_asados.jpg"
+  },
+  {
+    "_id": "6706e813f50b0b083892fbca",
+    "nombre": "Pudding de Chia",
+    "categoria": "nuts&seeds",
+    "ocasion": "breakfast",
+    "calorias": 220,
+    "descripcion": "Saludable y lleno de fibra.",
+    "ingredientes": [
+      "semillas de chia",
+      "leche de almendras",
+      "miel",
+      "frutas"
+    ],
+    "valoraciones": [
+      5,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 10,
+    "foto": "https://example.com/pudding_chia.jpg"
+  }
+]
+```
+
+```js
+this API lets you get the info of a specific dish 
+GET http://localhost:3000/comidas/6706e7faf50b0b083892fbc2 <= ID as a instance 
+
+return's: 
+
+{
+  "_id": "6706e7faf50b0b083892fbc2",
+  "nombre": "Tazon de Acai",
+  "categoria": "nuts&seeds",
+  "ocasion": "breakfast",
+  "calorias": 300,
+  "descripcion": "Rico en antioxidantes y delicioso.",
+  "ingredientes": [
+    "pure de acai",
+    "platano",
+    "granola",
+    "miel"
+  ],
+  "valoraciones": [
+    5,
+    5,
+    4
+  ],
+  "promedioValoracion": 4.67,
+  "Delivery": 15,
+  "foto": "https://example.com/tazon_acai.jpg"
+}
+```
+
+```js
+this API search dished by name, it is for the search bar
+
+GET http://localhost:3000/comidas/foodSearchBar?searchTerm=tortilla <= for instance
+
+Return's:
+
+[
+  {
+    "_id": "6706e7faf50b0b083892fbbf",
+    "nombre": "Tortilla de Espinacas",
+    "categoria": "protein",
+    "ocasion": "breakfast",
+    "calorias": 250,
+    "descripcion": "Deliciosa y perfecta para comenzar el dia.",
+    "ingredientes": [
+      "huevos",
+      "espinaca",
+      "cebolla",
+      "queso feta"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 12,
+    "foto": "https://example.com/tortilla_espinacas.jpg"
+  }
+]
+
+```
+
+variables de entorno 
+
+```js
+KEY_SECRET="MIID0zCCArsCFFDT4GSs1jca9YDmQW5KC5ZwM7lHMA0GCSqGSIb3DQEBCwUAMIGlMQswCQYDVQQGEwJDTzESMBAGA1UECAwJU2FudGFuZGVyMRQwEgYDVQQHDAtCdWNhcmFtYW5nYTEUMBIGA1UECgwLQ2FtcHVzTGFuZHMxFDASBgNVBAsMC0J1Y2FyYW1hbmdhMRIwEAYDVQQDDAlsb2NhbGhvc3QxLDAqBgkqhkiG9w0BCQEWHW1pZ3VlbGNhc3Ryby5jYW1wdXNAZ21haWwuY29tMB4XDTI0MDkxMjIxMzQyMVoXDTI1MDkxMjIxMzQyMVowgaUxCzAJBgNVBAYTAkNPMRIwEAYDVQQIDAlTYW50YW5kZXIxFDASBgNVBAcMC0J1Y2FyYW1hbmdhMRQwEgYDVQQKDAtDYW1wdXNMYW5kczEUMBIGA1UECwwLQnVjYXJhbWFuZ2ExEjAQBgNVBAMMCWxvY2FsaG9zdDEsMCoGCSqGSIb3DQEJARYdbWlndWVsY2FzdHJvLmNhbXB1c0BnbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCdeduogD/qN9q7oG2PjajgP0elss21BauwCbWvjp9mfzwZRVVzG+Vtt8buFNbBg1XQi2vbdzi2LSHr6CaBo7CWEUvEqqqQQkRDva4G7PmDycq3OT0IRCsfaik2dkRtPKG/JgPI1f2DQWaN6azcyfbDIhRnT/4TgNRVEutn2J15bA5Mud0YNOTKA6Qtfv6+JGBVMfWgTzklfW4JC+l57LuqBaLJu83hIaZg9Co97ih2n3uluJposzoNu9D8fL5PKRndoMY/dUNDZs7pmwHTLJB8zkfOcAYYzo7bUS+touBcWCBW2mfp2W0Nt07o22/na0iGbGamXhnTUMLyDsCyWUa1AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAE8o2N1wBE9bY/79SXx74iguWzQq9JUCqG/9Ln0xoSClbSXqPGaWwr8WEy5aVKlfj74xcYUAxqr0zkknNinQH4VzGuPYb/6a2otHIm9TDk+4mJllMq2Htal/QhQkWz26m+Z2Nv6lBZAuB7g93VgxcAP3pC2z8FdBYG5/HQDdngaizz+keP0W6RipzzBRD925npvzQSjCUvkGY5EjX9VaYIhPFXy3dUmudObdr1gjTVMrCflHKOvdZodv+DUlgros3F1BGmdSt2Cb8XdkfJK1z1OhoTbDWXRLRxCYdswxualsPIEqxB4GTW/2H60Qw/xQlDMHu2nekRyh1tQA1iLcY9k="
+EXPRESS_EXPIRE=1800000
+EXPRESS_PORT=3000
+EXPRESS_HOST="localhost"
+
+MONGO_ACCESS="mongodb://"
+MONGO_USER="martinezRojas"
+MONGO_PWD="developer"
+MONGO_HOST="3.134.90.81"
+MONGO_PORT=27017
+MONGO_DB_NAME="martinezRojasFiltro"
+
+GOOGLE_CLIENT_ID="818450291253-qvh989qr2ei6i3iprqdr6ai9ro5f4pno.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET="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"
+
+GITHUB_CLIENT_ID="Ov23lipagnwMStmTpSUs"
+GITHUB_CLIENT_SECRET="204fd33f195ed28e62955152551574177af08b49"
+
+DISCORD_CLIENT_ID="1291725579543908434"
+DISCORD_CLIENT_SECRET="xjXae3ljWGFMAHBqv0Ph8Yz0I5ZexJiu"
+```
+
+```js
+npm i
+```
+
+```js
+npm run dev
+```
+
+
+
+```
+http://localhost:3000/comidas/getFoot
+
+
+[
+  {
+    "_id": "6706e7faf50b0b083892fbbe",
+    "nombre": "Smoothie Verde",
+    "categoria": "vegetables",
+    "ocasion": "breakfast",
+    "calorias": 180,
+    "descripcion": "Refrescante y lleno de nutrientes.",
+    "ingredientes": [
+      "espinaca",
+      "manzana",
+      "platano",
+      "agua de coco"
+    ],
+    "valoraciones": [
+      5,
+      4,
+      4
+    ],
+    "promedioValoracion": 4.33,
+    "Delivery": 10,
+    "foto": "https://example.com/smoothie_verde.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbbf",
+    "nombre": "Tortilla de Espinacas",
+    "categoria": "protein",
+    "ocasion": "breakfast",
+    "calorias": 250,
+    "descripcion": "Deliciosa y perfecta para comenzar el dia.",
+    "ingredientes": [
+      "huevos",
+      "espinaca",
+      "cebolla",
+      "queso feta"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 12,
+    "foto": "https://example.com/tortilla_espinacas.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc0",
+    "nombre": "Pasta Integral con Verduras",
+    "categoria": "vegetables",
+    "ocasion": "lunch",
+    "calorias": 350,
+    "descripcion": "Sana y satisfactoria.",
+    "ingredientes": [
+      "pasta integral",
+      "brocoli",
+      "zanahoria",
+      "salsa de tomate"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      3
+    ],
+    "promedioValoracion": 4,
+    "Delivery": 20,
+    "foto": "https://example.com/pasta_integral_verduras.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc1",
+    "nombre": "Hamburguesa de Pavo",
+    "categoria": "protein",
+    "ocasion": "lunch",
+    "calorias": 400,
+    "descripcion": "Deliciosa y baja en grasas.",
+    "ingredientes": [
+      "carne de pavo",
+      "pan integral",
+      "lechuga",
+      "tomate"
+    ],
+    "valoraciones": [
+      5,
+      4,
+      4
+    ],
+    "promedioValoracion": 4.33,
+    "Delivery": 18,
+    "foto": "https://example.com/hamburguesa_pavo.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc2",
+    "nombre": "Tazon de Acai",
+    "categoria": "nuts&seeds",
+    "ocasion": "breakfast",
+    "calorias": 300,
+    "descripcion": "Rico en antioxidantes y delicioso.",
+    "ingredientes": [
+      "pure de acai",
+      "platano",
+      "granola",
+      "miel"
+    ],
+    "valoraciones": [
+      5,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 15,
+    "foto": "https://example.com/tazon_acai.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc3",
+    "nombre": "Sopa de Lentejas",
+    "categoria": "protein",
+    "ocasion": "dinner",
+    "calorias": 250,
+    "descripcion": "Reconfortante y nutritiva.",
+    "ingredientes": [
+      "lentejas",
+      "zanahoria",
+      "apio",
+      "especias"
+    ],
+    "valoraciones": [
+      4,
+      4,
+      5
+    ],
+    "promedioValoracion": 4.33,
+    "Delivery": 10,
+    "foto": "https://example.com/sopa_lentejas.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc4",
+    "nombre": "Ensalada de Atun",
+    "categoria": "protein",
+    "ocasion": "lunch",
+    "calorias": 350,
+    "descripcion": "Rapida y llena de proteinas.",
+    "ingredientes": [
+      "atun",
+      "lechuga",
+      "tomate",
+      "mayonesa"
+    ],
+    "valoraciones": [
+      5,
+      4,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 12,
+    "foto": "https://example.com/ensalada_atun.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc5",
+    "nombre": "Tazon de Quinoa",
+    "categoria": "nuts&seeds",
+    "ocasion": "dinner",
+    "calorias": 400,
+    "descripcion": "Nutritivo y lleno de sabor.",
+    "ingredientes": [
+      "quinoa",
+      "aguacate",
+      "tomate",
+      "nueces"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 20,
+    "foto": "https://example.com/tazon_quinoa.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc6",
+    "nombre": "Garbanzos Asados",
+    "categoria": "nuts&seeds",
+    "ocasion": "lunch",
+    "calorias": 150,
+    "descripcion": "Crujientes y llenos de sabor.",
+    "ingredientes": [
+      "garbanzos",
+      "aceite de oliva",
+      "sal",
+      "pimienta"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.33,
+    "Delivery": 8,
+    "foto": "https://example.com/garbanzos_asados.jpg"
+  },
+  {
+    "_id": "6706e7faf50b0b083892fbc7",
+    "nombre": "Sushi Vegetal",
+    "categoria": "vegetables",
+    "ocasion": "dinner",
+    "calorias": 300,
+    "descripcion": "Fresco y lleno de sabor.",
+    "ingredientes": [
+      "arroz",
+      "nori",
+      "pepino",
+      "aguacate"
+    ],
+    "valoraciones": [
+      5,
+      4,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 20,
+    "foto": "https://example.com/sushi_vegetal.jpg"
+  },
+  {
+    "_id": "6706e813f50b0b083892fbc8",
+    "nombre": "Ensalada Mediterranea",
+    "categoria": "vegetables",
+    "ocasion": "lunch",
+    "calorias": 300,
+    "descripcion": "Llena de frescura y sabor mediterraneo.",
+    "ingredientes": [
+      "tomate",
+      "pepino",
+      "aceitunas",
+      "queso feta"
+    ],
+    "valoraciones": [
+      5,
+      4,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 15,
+    "foto": "https://example.com/ensalada_mediterranea.jpg"
+  },
+  {
+    "_id": "6706e813f50b0b083892fbc9",
+    "nombre": "Tacos de Pollo",
+    "categoria": "protein",
+    "ocasion": "dinner",
+    "calorias": 450,
+    "descripcion": "Deliciosos y faciles de preparar.",
+    "ingredientes": [
+      "pollo",
+      "tortillas de maiz",
+      "aguacate",
+      "salsa"
+    ],
+    "valoraciones": [
+      5,
+      4,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 20,
+    "foto": "https://example.com/tacos_pollo.jpg"
+  },
+  {
+    "_id": "6706e813f50b0b083892fbca",
+    "nombre": "Pudding de Chia",
+    "categoria": "nuts&seeds",
+    "ocasion": "breakfast",
+    "calorias": 220,
+    "descripcion": "Saludable y lleno de fibra.",
+    "ingredientes": [
+      "semillas de chia",
+      "leche de almendras",
+      "miel",
+      "frutas"
+    ],
+    "valoraciones": [
+      5,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 10,
+    "foto": "https://example.com/pudding_chia.jpg"
+  },
+  {
+    "_id": "6706e813f50b0b083892fbcb",
+    "nombre": "Pollo al Limon",
+    "categoria": "protein",
+    "ocasion": "dinner",
+    "calorias": 350,
+    "descripcion": "Sabroso y aromatico.",
+    "ingredientes": [
+      "pollo",
+      "limon",
+      "ajo",
+      "especias"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 25,
+    "foto": "https://example.com/pollo_al_limon.jpg"
+  },
+  {
+    "_id": "6706e813f50b0b083892fbcc",
+    "nombre": "Ensalada de Frutas",
+    "categoria": "vegetables",
+    "ocasion": "breakfast",
+    "calorias": 150,
+    "descripcion": "Refrescante y dulce.",
+    "ingredientes": [
+      "frutas de temporada",
+      "miel",
+      "jugo de limon"
+    ],
+    "valoraciones": [
+      5,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 10,
+    "foto": "https://example.com/ensalada_frutas.jpg"
+  },
+  {
+    "_id": "6706ebe0f50b0b083892fbd7",
+    "nombre": "Protein Shake de Chocolate",
+    "categoria": "shakes",
+    "ocasion": "breakfast",
+    "calorias": 200,
+    "descripcion": "Delicioso batido de chocolate rico en proteínas.",
+    "ingredientes": [
+      "proteína de suero",
+      "leche",
+      "cacao en polvo",
+      "miel"
+    ],
+    "valoraciones": [
+      5,
+      4,
+      4
+    ],
+    "promedioValoracion": 4.33,
+    "Delivery": 10,
+    "foto": "https://example.com/protein_shake_chocolate.jpg"
+  },
+  {
+    "_id": "6706ebe0f50b0b083892fbd8",
+    "nombre": "Protein Shake de Vainilla",
+    "categoria": "shakes",
+    "ocasion": "breakfast",
+    "calorias": 180,
+    "descripcion": "Batido de vainilla cremoso y nutritivo.",
+    "ingredientes": [
+      "proteína de suero",
+      "leche de almendras",
+      "extracto de vainilla",
+      "plátano"
+    ],
+    "valoraciones": [
+      5,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 10,
+    "foto": "https://example.com/protein_shake_vainilla.jpg"
+  },
+  {
+    "_id": "6706ebe0f50b0b083892fbd9",
+    "nombre": "Protein Shake Verde",
+    "categoria": "shakes",
+    "ocasion": "breakfast",
+    "calorias": 250,
+    "descripcion": "Nutritivo batido verde con espinacas y plátano.",
+    "ingredientes": [
+      "proteína de guisante",
+      "espinaca",
+      "plátano",
+      "agua de coco"
+    ],
+    "valoraciones": [
+      4,
+      5,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 15,
+    "foto": "https://example.com/protein_shake_verde.jpg"
+  },
+  {
+    "_id": "6706ebe0f50b0b083892fbda",
+    "nombre": "Protein Shake de Fresa",
+    "categoria": "shakes",
+    "ocasion": "snack",
+    "calorias": 210,
+    "descripcion": "Refrescante batido de fresa ideal para media tarde.",
+    "ingredientes": [
+      "proteína de suero",
+      "fresas",
+      "yogur",
+      "miel"
+    ],
+    "valoraciones": [
+      5,
+      4,
+      5
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 12,
+    "foto": "https://example.com/protein_shake_fresa.jpg"
+  },
+  {
+    "_id": "6706ebe0f50b0b083892fbdb",
+    "nombre": "Protein Shake de Mango",
+    "categoria": "shakes",
+    "ocasion": "snack",
+    "calorias": 220,
+    "descripcion": "Tropical y delicioso, perfecto para cualquier momento.",
+    "ingredientes": [
+      "proteína de suero",
+      "mango",
+      "leche de coco",
+      "hielo"
+    ],
+    "valoraciones": [
+      5,
+      5,
+      4
+    ],
+    "promedioValoracion": 4.67,
+    "Delivery": 10,
+    "foto": "https://example.com/protein_shake_mango.jpg"
+  }
+]
+```
 

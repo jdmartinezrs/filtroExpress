@@ -47,6 +47,22 @@ class FoodValidator {
       ];
     
       };
+      getAllFoodValidator = () => {
+        return [
+            body().custom((value, { req }) => {
+                if (Object.keys(req.body).length > 0) {
+                    throw new Error('Do not send anything in the body'); // ❌ No envíes nada en el cuerpo
+                }
+                return true; // ✔️ Es válido
+            }),
+            query().custom((value, { req }) => {
+                if (Object.keys(req.query).length > 0) {
+                    throw new Error(`Don't send anything in the url`); // ❌ No envíes nada en la URL
+                }
+                return true; // ✔️ Es válido
+            })
+        ];
+    };
 }
 
 module.exports= FoodValidator;
